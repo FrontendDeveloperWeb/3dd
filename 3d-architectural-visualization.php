@@ -17,8 +17,8 @@
 
     <section class="hero-container">
         <div class="container hero-wrapper">
-            <div class="row">
-                <div class="col-xl-6 content-side">
+            <div class="row align-items-center">
+                <div class="col-xl-6 content-side" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="main-heading">
                         3D Architectural <br>
                         <span class="highlight-text">Visualization</span>
@@ -39,186 +39,184 @@
                     </button>
                 </div>
 
-                <div class="col-12 col-xl-6 ">
+                <div class="col-12 col-xl-6 " data-aos="fade-left" data-aos-duration="1000">
                     <div class="image-card">
                         <img
                             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
-                            alt="Modern House 3D Render"
-                        >
+                            alt="Modern House 3D Render">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="timeline-section py-5">
-    <div class="container text-center mb-5 header-container">
-      <h2 class="section-title">Get Your 3D Done in Just 5 Step</h2>
-      <p class="section-subtitle mx-auto">
-        We have 3D modeling experts on board who are prone to delivering excellence in every project they work on in just 5 steps.
-      </p>
-    </div>
+        <div class="container text-center mb-5 header-container" data-aos="fade-up" data-aos-duration="800">
+            <h2 class="section-title">Get Your 3D Done in Just 5 Step</h2>
+            <p class="section-subtitle mx-auto">
+                We have 3D modeling experts on board who are prone to delivering excellence in every project they work on in just 5 steps.
+            </p>
+        </div>
 
-    <div class="container relative-timeline-wrap">
-      <div class="center-line"></div>
+        <div class="container relative-timeline-wrap">
+            <div class="center-line"></div>
 
-      <div class="row timeline-row justify-content-center align-items-center mb-4">
-        <div class="col-md-5 d-flex justify-content-end ordering-left">
-          <div class="step-card card-left">
-            <h4 class="card-title">Send It In</h4>
-            <p class="card-desc">Send us your details, what services you need, and when you want it to be completed. We'll get back to you ASAP.</p>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex justify-content-center positioning-node">
-          <div class="step-number-badge">01</div>
-        </div>
-        <div class="col-md-5 empty-space-col"></div>
-      </div>
-
-      <div class="row timeline-row justify-content-center align-items-center mb-4">
-        <div class="col-md-5 empty-space-col"></div>
-        <div class="col-md-2 d-flex justify-content-center positioning-node">
-          <div class="step-number-badge">02</div>
-        </div>
-        <div class="col-md-5 d-flex justify-content-start ordering-right">
-          <div class="step-card card-right">
-            <h4 class="card-title">3D Modeling & Design</h4>
-            <p class="card-desc">Our 3D modeling artist designs your ideas with accuracy, detail, and precision. They make sure every angle and every inch is done right.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row timeline-row justify-content-center align-items-center mb-4">
-        <div class="col-md-5 d-flex justify-content-end ordering-left">
-          <div class="step-card card-left">
-            <h4 class="card-title">Rendering & Visualization</h4>
-            <p class="card-desc">Now, we make it render with realistic lighting, textures, and details that make it look like the real deal.</p>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex justify-content-center positioning-node">
-          <div class="step-number-badge">03</div>
-        </div>
-        <div class="col-md-5 empty-space-col"></div>
-      </div>
-
-      <div class="row timeline-row justify-content-center align-items-center mb-4">
-        <div class="col-md-5 empty-space-col"></div>
-        <div class="col-md-2 d-flex justify-content-center positioning-node">
-          <div class="step-number-badge">04</div>
-        </div>
-        <div class="col-md-5 d-flex justify-content-start ordering-right">
-          <div class="step-card card-right">
-            <h4 class="card-title">Final Tweaking</h4>
-            <p class="card-desc">Want tweaking? Consider it done. Because we'll fine-tune it until it's exactly how you want it. No settling.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row timeline-row justify-content-center align-items-center mb-4">
-        <div class="col-md-5 d-flex justify-content-end ordering-left">
-          <div class="step-card card-left">
-            <h4 class="card-title">Delivering It</h4>
-            <p class="card-desc">We'll send it to you after making sure the final 3D architectural visualization are up to the industry's mark and ready to sell.</p>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex justify-content-center positioning-node">
-          <div class="step-number-badge">05</div>
-        </div>
-        <div class="col-md-5 empty-space-col"></div>
-      </div>
-
-    </div>
-  </section>
-  <section class="gallery-portfolio-section py-5">
-    <div class="container">
-      
-      <div class="category-block">
-        <h3 class="category-title">Exterior Renders</h3>
-        <div class="gallery-grid exterior-grid mx-auto">
-          <div class="stacked-column">
-            <div class="gallery-card animate-hover">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Exterior Render 1">
+            <div class="row timeline-row justify-content-center align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end ordering-left" data-aos="fade-right" data-aos-duration="800">
+                    <div class="step-card card-left">
+                        <h4 class="card-title">Send It In</h4>
+                        <p class="card-desc">Send us your details, what services you need, and when you want it to be completed. We'll get back to you ASAP.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center positioning-node" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="step-number-badge">01</div>
+                </div>
+                <div class="col-md-5 empty-space-col"></div>
             </div>
-            <div class="gallery-card animate-hover">
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Exterior Render 2">
+
+            <div class="row timeline-row justify-content-center align-items-center mb-4">
+                <div class="col-md-5 empty-space-col"></div>
+                <div class="col-md-2 d-flex justify-content-center positioning-node" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="step-number-badge">02</div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-start ordering-right" data-aos="fade-left" data-aos-duration="800">
+                    <div class="step-card card-right">
+                        <h4 class="card-title">3D Modeling & Design</h4>
+                        <p class="card-desc">Our 3D modeling artist designs your ideas with accuracy, detail, and precision. They make sure every angle and every inch is done right.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="tall-column">
-            <div class="gallery-card animate-hover h-100">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Exterior Render 3">
+
+            <div class="row timeline-row justify-content-center align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end ordering-left" data-aos="fade-right" data-aos-duration="800">
+                    <div class="step-card card-left">
+                        <h4 class="card-title">Rendering & Visualization</h4>
+                        <p class="card-desc">Now, we make it render with realistic lighting, textures, and details that make it look like the real deal.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center positioning-node" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="step-number-badge">03</div>
+                </div>
+                <div class="col-md-5 empty-space-col"></div>
             </div>
-          </div>
+
+            <div class="row timeline-row justify-content-center align-items-center mb-4">
+                <div class="col-md-5 empty-space-col"></div>
+                <div class="col-md-2 d-flex justify-content-center positioning-node" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="step-number-badge">04</div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-start ordering-right" data-aos="fade-left" data-aos-duration="800">
+                    <div class="step-card card-right">
+                        <h4 class="card-title">Final Tweaking</h4>
+                        <p class="card-desc">Want tweaking? Consider it done. Because we'll fine-tune it until it's exactly how you want it. No settling.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row timeline-row justify-content-center align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end ordering-left" data-aos="fade-right" data-aos-duration="800">
+                    <div class="step-card card-left">
+                        <h4 class="card-title">Delivering It</h4>
+                        <p class="card-desc">We'll send it to you after making sure the final 3D architectural visualization are up to the industry's mark and ready to sell.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center positioning-node" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="step-number-badge">05</div>
+                </div>
+                <div class="col-md-5 empty-space-col"></div>
+            </div>
+
         </div>
-      </div>
+    </section>
 
-      <hr class="section-divider">
+    <section class="gallery-portfolio-section py-5">
+        <div class="container">
 
-      <div class="category-block">
-        <h3 class="category-title">Interior Renders</h3>
-        <div class="gallery-grid interior-grid mx-auto">
-          <div class="square-column">
-            <div class="gallery-card animate-hover h-100">
-              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Interior Render 1">
+            <div class="category-block" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="category-title">Exterior Renders</h3>
+                <div class="gallery-grid exterior-grid mx-auto">
+                    <div class="stacked-column">
+                        <div class="gallery-card animate-hover" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Exterior Render 1">
+                        </div>
+                        <div class="gallery-card animate-hover" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Exterior Render 2">
+                        </div>
+                    </div>
+                    <div class="tall-column">
+                        <div class="gallery-card animate-hover h-100" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Exterior Render 3">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="stacked-column">
-            <div class="gallery-card animate-hover">
-              <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?auto=format&fit=crop&w=800&q=80" alt="Interior Render 2">
+
+            <hr class="section-divider">
+
+            <div class="category-block" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="category-title">Interior Renders</h3>
+                <div class="gallery-grid interior-grid mx-auto">
+                    <div class="square-column">
+                        <div class="gallery-card animate-hover h-100" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Interior Render 1">
+                        </div>
+                    </div>
+                    <div class="stacked-column">
+                        <div class="gallery-card animate-hover" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?auto=format&fit=crop&w=800&q=80" alt="Interior Render 2">
+                        </div>
+                        <div class="gallery-card animate-hover" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="https://images.unsplash.com/photo-1617806118233-18e1db207f62?auto=format&fit=crop&w=800&q=80" alt="Interior Render 3">
+                        </div>
+                    </div>
+                    <div class="square-column">
+                        <div class="gallery-card animate-hover h-100" data-aos="zoom-in" data-aos-delay="400">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Interior Render 4">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-card animate-hover">
-              <img src="https://images.unsplash.com/photo-1617806118233-18e1db207f62?auto=format&fit=crop&w=800&q=80" alt="Interior Render 3">
+
+            <hr class="section-divider">
+
+            <div class="category-block mb-4" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="category-title">Floor Plans</h3>
+
+                <div id="floorPlanCarousel" class="carousel slide custom-theme-carousel mx-auto" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators custom-indicators">
+                        <button type="button" data-bs-target="#floorPlanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#floorPlanCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#floorPlanCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="gallery-card animate-hover mx-auto">
+                                <img src="https://images.unsplash.com/photo-1545464693-f1798a373343?auto=format&fit=crop&w=800&q=80" alt="Floor Plan 1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="gallery-card animate-hover mx-auto">
+                                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Floor Plan 2">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="gallery-card animate-hover mx-auto">
+                                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" alt="Floor Plan 3">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <div class="square-column">
-            <div class="gallery-card animate-hover h-100">
-              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Interior Render 4">
-            </div>
-          </div>
+
         </div>
-      </div>
-
-      <hr class="section-divider">
-
-      <div class="category-block mb-4">
-  <h3 class="category-title">Floor Plans</h3>
-  
-  <div id="floorPlanCarousel" class="carousel slide custom-theme-carousel mx-auto" data-bs-ride="carousel">
-    
-    <div class="carousel-indicators custom-indicators">
-      <button type="button" data-bs-target="#floorPlanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#floorPlanCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#floorPlanCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="gallery-card animate-hover mx-auto">
-          <img src="https://images.unsplash.com/photo-1545464693-f1798a373343?auto=format&fit=crop&w=800&q=80" alt="Floor Plan 1">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="gallery-card animate-hover mx-auto">
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Floor Plan 2">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="gallery-card animate-hover mx-auto">
-          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" alt="Floor Plan 3">
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-    
+    </section>
 
 
 
 
-    
 
 
     <section class="portfolio-section">
@@ -356,7 +354,7 @@
                 <div class="swiper-pagination portfolio-pagination"></div>
             </div>
 
-      
+
             <div class="portfolio-slider-block" id="exterior">
                 <div class="swiper portfolioSwiper">
                     <div class="swiper-wrapper">
@@ -620,16 +618,18 @@
         </div>
     </section>
     <!-- section ENd -->
-    
 
 
 
 
-   
 
-    <?php //include "partners.php" ?>
 
-    <?php  // include 'get-quote.php' ?>
+
+    <?php //include "partners.php" 
+    ?>
+
+    <?php  // include 'get-quote.php' 
+    ?>
     <!-- end -->
 
     <!-- footer -->

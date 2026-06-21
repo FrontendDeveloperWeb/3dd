@@ -1,12 +1,142 @@
+@font-face {
+  font-family: MontserratExtraLightItalic;
+  src: url("../fonts/Montserrat-ExtraLightItalic.ttf");
+}
 
-/* Noman Css  */
+@font-face {
+  font-family: MontserratLight;
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: MontserratLightItalic;
+  src: url("../fonts/Montserrat-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: MontserratItalic;
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: MontserratMediumItalic;
+  src: url("../fonts/Montserrat-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: MontserratSemiBoldItalic;
+  src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: MontserratBoldItalic;
+  src: url("../fonts/Montserrat-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: MontserratExtraBold;
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: MontserratExtraBoldItalic;
+  src: url("../fonts/Montserrat-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: MontserratBlack;
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: MontserratBlackItalic;
+  src: url("../fonts/Montserrat-BlackItalic.ttf");
+}
+
+/* ==========================================================================
+   ROOT VARIABLES
+   ========================================================================== */
+:root {
+  /* ========== OUTFIT BODY FONTS (Updated with system-ui Fallbacks) ========== */
+  --font-100: MontserratThin;
+  --font-200: MontserratExtraLight;
+  --font-300: MontserratLight;
+  --font-400: MontserratRegular;
+  --font-500: MontserratMedium;
+  --font-600: MontserratSemiBold;
+  --font-700: MontserratBold;
+  --font-800: MontserratExtraBold;
+  --font-900: MontserratBlack;
+  --font-100-italic: MontserratThinItalic;
+  --font-200-italic: MontserratExtraLightItalic;
+  --font-300-italic: MontserratLightItalic;
+  --font-400-italic: MontserratItalic;
+  --font-500-italic: MontserratMediumItalic;
+  --font-600-italic: MontserratSemiBoldItalic;
+  --font-700-italic: MontserratBoldItalic;
+  --font-800-italic: MontserratExtraBoldItalic;
+  --font-900-italic: MontserratBlackItalic;
+
+  /* ========== 3D ARCHITECTURE DARK GREEN COLORS ========== */
+  --bg-main: #0a0d0c;
+  /* Deep Obsidian Black */
+  --bg-surface: #121715;
+  /* Card/Nav structural dark green-tinted grey */
+  --primary: #6bb338;
+  /* Cyber Emerald (Buttons, active states, indicators) */
+  --secondary: #c7f152;
+  /* Muted Forest Green (Borders, subtle glows, depth handles) */
+  --text-main: #e1e1e1;
+  /* Clean crisp white for absolute contrast */
+  --text-muted: #8a9490;
+  /* Slate grey with green undertones for technical readouts */
+
+  /* Architectural Radial Ambient Glow */
+  --primary-radial: radial-gradient(circle at top left,
+      #6bb338 0%,
+      #c7f152 100%);
+
+  /* ========== TRANSITIONS ========== */
+  --transition-smooth: all 0.4s ease-in-out;
+  --transition-fast: all 0.25s ease;
+
+  /* ========== BORDER RADIUS ========== */
+  --radius-sm: 13px;
+  --radius-lg: 50px;
+
+  /* ========== RESPONSIVE HEADING SIZE ========== */
+  /* Auto scales between 32px and 64px for dynamic modern layouts */
+  --main-heading-size: clamp(32px, calc(2rem + 2.5vw), 54px);
+}
+
+/* =============================== Noman Css  ========================= */
 
 
 .header-absolute-remove .header {
     position: static;
 }
 .highlight-text{
-    color: #1a73e8;
+    color: var(--primary);
 }
 
 
@@ -31,8 +161,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #1a73e8;
-  color: #ffffff;
+  background: var(--primary-radial);
+  color: black;
   font-size: 1rem;
   font-weight: 600;
   border: none;
@@ -123,7 +253,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #0066ff; /* Accent blue timeline path line */
+  background-color: var(--primary); /* Accent blue timeline path line */
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -137,7 +267,7 @@
 .step-number-badge {
   width: 42px;
   height: 42px;
-  background-color: #0066ff;
+  background-color: var(--primary);
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 700;
@@ -164,16 +294,16 @@
 
 /* Custom left thick blue accent border */
 .card-left {
-  border-left: 4px solid #0066ff;
+  border-left: 4px solid var(--primary);
 }
 
 /* Custom left thick blue accent border */
 .card-right {
-  border-left: 4px solid #0066ff;
+  border-left: 4px solid var(--primary);
 }
 
 .card-title {
-  color: #0066ff; /* Clean vibrant blue for headers */
+  color: var(--primary); /* Clean vibrant blue for headers */
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -365,7 +495,7 @@
 
 /* Active Dot Custom Theme Color Styling */
 .custom-indicators .active {
-  background-color: #0066ff !important; /* Your exact theme accent blue color */
+  background-color: var(--primary) !important; /* Your exact theme accent blue color */
   width: 20px !important; /* Elegant stretched pill layout indicator on focus */
   border-radius: 4px !important;
   box-shadow: 0 0 8px rgba(0, 102, 255, 0.6);
