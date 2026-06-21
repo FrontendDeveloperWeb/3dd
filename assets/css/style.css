@@ -1553,8 +1553,8 @@ ul.navbar-nav {
 }
 
 .w-title .accent-text {
-  color: var(--primary);
-  /* Highlighted brand token */
+  color: var(--primary) !important;
+
 }
 
 .w-description {

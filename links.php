@@ -14,5 +14,6 @@
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 <!-- Style css -->
 <link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/noman.css" />
 <!-- Responsive css -->
 <link rel="stylesheet" href="assets/css/responsive.css" />
