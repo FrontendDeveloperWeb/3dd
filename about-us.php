@@ -16,7 +16,7 @@
     <!-- End header -->
 
     <!-- section banner -->
-    <section class=" sss hero-section about-hero">
+    <section class=" sss sss hero-section about-hero">
         <div class="hero-bg-zoom"
             style="background-image: linear-gradient(rgba(10, 13, 12, 0.8), rgba(10, 13, 12, 0.9)), url('assets/images/about-us-bg.jfif');">
         </div>
