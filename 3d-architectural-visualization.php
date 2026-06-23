@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>3D Architectural Visualization</title>
     <?php include 'links.php' ?>
     <!-- https://f5394ad4a4d84890b42f15605b139cf8.prod.enterapp.pro/ -->
 </head>
@@ -31,7 +31,7 @@
                         Interior Rendering, or 3D Floor Plans, we render them all.
                     </p>
 
-                    <button class="cta-button">
+                    <button class="btn-theme">
                         Contact Us Today
                         <svg class="arrow-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />

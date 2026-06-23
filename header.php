@@ -48,7 +48,7 @@ $page = basename($_SERVER['PHP_SELF'], '.php');
                         </a>
                         <ul class="dropdown-menu dropdown-navdesktop" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="3d-architectural-visualization">3d Architectural Visualization</a></li>
-                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li><a class="dropdown-item" href="interactive-vr-simulations">Interactive VR Simulations</a></li>
                             <li><a class="dropdown-item" href="#">Service 3</a></li>
                             <li><a class="dropdown-item" href="#">Service 4</a></li>
                         </ul>
