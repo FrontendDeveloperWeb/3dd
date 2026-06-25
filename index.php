@@ -133,7 +133,7 @@
 
     <!--  sec-Counter-->
     <?php include 'counter.php' ?>
-  
+
     <!--  sec-Counter End-->
 
     <section class="services-section">
@@ -143,109 +143,69 @@
             <div class="services-header" data-aos="fade-up">
                 <span class="section-tagline">What We Offer</span>
                 <h2 class="section-title">Our Premium Services</h2>
-                <p class="section-subtitle">From ultra-photorealistic 3D renders to full-spectrum digital marketing, we
-                    provide end-to-end architectural visualization solutions.</p>
+                <p class="section-subtitle">From ultra-photorealistic 3D renders to immersive hybrid transformations, we provide end-to-end architectural visualization solutions.</p>
             </div>
 
             <div class="services-grid">
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon"><i class="ri-headphone-line"></i></div>
-                    <span class="card-tag">Immersive Tech</span>
-                    <h3 class="card-title">Interactive VR Simulations</h3>
-                    <p class="card-desc">Fully immersive virtual reality walkthroughs that let buyers step inside
-                        unbuilt
-                        properties with photorealistic...</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                    <div class="card-icon"><i class="ri-box-3-line"></i></div>
+                    <span class="card-tag">Core Service</span>
+                    <h3 class="card-title">3D Architectural Visualization</h3>
+                    <p class="card-desc">Photorealistic external and internal renders that bridge the gap between blueprint and reality.</p>
+                    <a href="3d-architectural-visualization" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="card-icon"><i class="ri-building-2-line"></i></div>
-                    <span class="card-tag">Core Service</span>
-                    <h3 class="card-title">3D Architectural Visualization</h3>
-                    <p class="card-desc">Ultra-photorealistic 3D renders of buildings, interiors, and master plans that
-                        bridge the gap between blueprint and...</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                    <div class="card-icon"><i class="ri-instance-line"></i></div>
+                    <span class="card-tag">Immersive Tech</span>
+                    <h3 class="card-title">Interactive VR Simulations</h3>
+                    <p class="card-desc">Immersive walk-throughs and environments that let buyers step inside unbuilt spaces.</p>
+                    <a href="interactive-vr-simulations" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon"><i class="ri-aspect-ratio-line"></i></div>
+                    <div class="card-icon"><i class="ri-home-gear-line"></i></div>
                     <span class="card-tag">Virtual Staging</span>
-                    <h3 class="card-title">360° Virtual Staging</h3>
-                    <p class="card-desc">Panoramic 360-degree virtual staging that showcases every angle of a space in
-                        breathtaking ultra-high definition.</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                    <h3 class="card-title">Virtual Staging</h3>
+                    <p class="card-desc">Furnish empty spaces digitally with style to dramatically increase buyer appeal.</p>
+                    <a href="virtual-staging" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="250">
-                    <div class="card-icon"><i class="ri-sofa-line"></i></div>
-                    <span class="card-tag">Virtual Staging</span>
-                    <h3 class="card-title">Virtual Staging</h3>
-                    <p class="card-desc">Digitally furnish and style empty properties to dramatically increase buyer
-                        appeal
-                        and market value perception.</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-icon"><i class="ri-magic-line"></i></div>
                     <span class="card-tag">Photo Enhancement</span>
                     <h3 class="card-title">Decluttering</h3>
-                    <p class="card-desc">Digitally remove unwanted items, furniture, and clutter from property photos to
-                        present spaces at their pristine...</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="card-icon"><i class="ri-sparkling-2-line"></i></div>
-                    <span class="card-tag">Virtual Staging</span>
-                    <h3 class="card-title">Virtual Staging & Decluttering</h3>
-                    <p class="card-desc">The complete transformation package — remove existing clutter and add premium
-                        virtual furnishings in one streamlined...</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon"><i class="ri-line-chart-line"></i></div>
-                    <span class="card-tag">Marketing</span>
-                    <h3 class="card-title">Digital Marketing</h3>
-                    <p class="card-desc">Data-driven real estate marketing campaigns that leverage stunning visual
-                        assets to
-                        maximize property exposure...</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
-                    <div class="card-icon"><i class="ri-database-2-line"></i></div>
-                    <span class="card-tag">Technology</span>
-                    <h3 class="card-title">IDX Integration Services</h3>
-                    <p class="card-desc">Seamless MLS/IDX integration solutions that embed live property listings
-                        directly
-                        into your real estate website.</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                    <p class="card-desc">Remove mess and clean up existing layouts to present property photos at their pristine best.</p>
+                    <a href="decluttering" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon"><i class="ri-palette-line"></i></div>
-                    <span class="card-tag">Creative</span>
-                    <h3 class="card-title">Graphic Design</h3>
-                    <p class="card-desc">Premium branding and graphic design services crafted specifically for luxury
-                        real
-                        estate and architectural professionals.</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                    <div class="card-icon"><i class="ri-paint-brush-line"></i></div>
+                    <span class="card-tag">Virtual Renovation</span>
+                    <h3 class="card-title">Virtual Renovation</h3>
+                    <p class="card-desc">Remodel floors, walls, and structural spaces to visualize a property's full structural potential.</p>
+                    <a href="virtual-renovation" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="card-icon"><i class="ri-code-s-slash-line"></i></div>
-                    <span class="card-tag">Technology</span>
-                    <h3 class="card-title">Custom Software Development</h3>
-                    <p class="card-desc">Bespoke real estate technology solutions — from interactive property portals to
-                        custom CRM and showcase platforms.</p>
-                    <a href="#" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                    <div class="card-icon"><i class="ri-layout-grid-line"></i></div>
+                    <span class="card-tag">Virtual Staging</span>
+                    <h3 class="card-title">Virtual Staging & Decluttering</h3>
+                    <p class="card-desc">Complete hybrid aesthetic transformation — remove old clutter and introduce premium styling.</p>
+                    <a href="virtual-staging-decluttering" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon"><i class="ri-anticlockwise-2-line"></i></div>
+                    <span class="card-tag">Virtual Staging</span>
+                    <h3 class="card-title">360° Virtual Staging</h3>
+                    <p class="card-desc">Immersive, fully furnished panoramic experiences showcasing every angle of a space.</p>
+                    <a href="360-virtual-staging" class="card-link">Learn more <i class="ri-arrow-right-line"></i></a>
                 </div>
 
             </div>
         </div>
-
     </section>
 
 
@@ -463,7 +423,7 @@
                 <div class="swiper-pagination portfolio-pagination"></div>
             </div>
 
-      
+
             <div class="portfolio-slider-block" id="exterior">
                 <div class="swiper portfolioSwiper">
                     <div class="swiper-wrapper">
@@ -728,9 +688,11 @@
     </section>
     <!-- section ENd -->
 
-    <?php //include "partners.php" ?>
+    <?php //include "partners.php" 
+    ?>
 
-    <?php  // include 'get-quote.php' ?>
+    <?php  // include 'get-quote.php' 
+    ?>
     <!-- end -->
 
     <!-- footer -->

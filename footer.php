@@ -31,12 +31,13 @@
             <div class="col-12 col-sm-6 col-lg-2 ps-lg-4">
                 <h4 class="footer-col-title">Services</h4>
                 <ul class="footer-links-list list-unstyled m-0 p-0">
-                    <li><a href="#"><i class="ri-arrow-right-line me-2"></i>VR Simulations</a></li>
-                    <li><a href="#"><i class="ri-arrow-right-line me-2"></i>3D Visualization</a></li>
-                    <li><a href="#"><i class="ri-arrow-right-line me-2"></i>360° Staging</a></li>
-                    <li><a href="#"><i class="ri-arrow-right-line me-2"></i>Virtual Staging</a></li>
-                    <li><a href="#"><i class="ri-arrow-right-line me-2"></i>Decluttering</a></li>
-                    <li><a href="#"><i class="ri-arrow-right-line me-2"></i>Staging & Decluttering</a></li>
+                    <li><a href="3d-architectural-visualization"><i class="ri-arrow-right-line me-2"></i>3D Architectural Visualization</a></li>
+                    <li><a href="interactive-vr-simulations"><i class="ri-arrow-right-line me-2"></i>Interactive VR Simulations</a></li>
+                    <li><a href="virtual-staging"><i class="ri-arrow-right-line me-2"></i>Virtual Staging</a></li>
+                    <li><a href="decluttering"><i class="ri-arrow-right-line me-2"></i>Decluttering</a></li>
+                    <li><a href="virtual-renovation"><i class="ri-arrow-right-line me-2"></i>Virtual Renovation</a></li>
+                    <li><a href="virtual-staging-decluttering"><i class="ri-arrow-right-line me-2"></i>Virtual Staging & Decluttering</a></li>
+                    <li><a href="360-virtual-staging"><i class="ri-arrow-right-line me-2"></i>360° Virtual Staging</a></li>
                 </ul>
             </div>
 
@@ -89,9 +90,8 @@
             </div>
             <div class="col-12 col-md-6 text-center text-md-end">
                 <div class="legal-links-group d-inline-flex align-items-center gap-4">
-                    <a href="#" class="legal-link">Privacy Policy</a>
-                    <a href="#" class="legal-link">Terms of Service</a>
-                    <a href="#" class="legal-link">Sitemap</a>
+                    <a href="privacy-policy" class="legal-link">Privacy Policy</a>
+                    <a href="terms-conditions" class="legal-link">Terms of Conditions</a>
                 </div>
             </div>
         </div>
@@ -119,50 +119,165 @@
 </script>
 
 <!-- Offcanvas Side Bar -->
+<style>
+    /* Custom premium styling for the offcanvas menu */
+    #offcanvasNavbar {
+        background-color: #111111;
+        /* Sleek luxury dark theme or change to your brand color */
+        color: #ffffff;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 5px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    #offcanvasNavbar .nav-link {
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 1.05rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 0.8rem 0;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    #offcanvasNavbar .nav-link:hover,
+    #offcanvasNavbar .nav-link.active {
+        color: #ffffff !important;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    /* Submenu wrapper refinement */
+    .mobile-submenu-wrapper {
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 8px;
+        padding: 0.5rem 1rem !important;
+        margin-top: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #offcanvasNavbar .mobile-submenu-wrapper .nav-link {
+        font-size: 0.95rem;
+        padding: 0.6rem 0;
+        border-bottom: none;
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    #offcanvasNavbar .mobile-submenu-wrapper .nav-link:hover,
+    #offcanvasNavbar .mobile-submenu-wrapper .nav-link.active {
+        color: #ffffff !important;
+        padding-left: 5px;
+        /* Subtle elegant slide movement on hover */
+    }
+
+    /* Smooth Micro-Arrow Rotation System */
+    .dropdown-trigger-btn .menu-arrow {
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 0.75rem;
+        opacity: 0.6;
+    }
+
+    .dropdown-trigger-btn[aria-expanded="true"] .menu-arrow {
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+
+    div#offcanvasNavbar ul.navbar-nav {
+        align-items: flex-start;
+    }
+</style>
+
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-    <div class="offcanvas-header">
-        <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas-header border-bottom border-light border-opacity-10 py-4">
+        <a href="index"><img src="assets/images/logo.png" alt="logo" style="max-height: 40px; width: auto;"></a>
+        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between py-4">
+        <ul class="navbar-nav flex-grow-1 pe-2">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link <?php if ($page == 'index') {
+                                        echo 'active';
+                                    } ?>" href="index">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link <?php if ($page == 'about-us') {
+                                        echo 'active';
+                                    } ?>" href="about-us">About Us</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Services <i class="fa fa-angle-down"></i>
+
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center dropdown-trigger-btn <?php
+                                                                                                            $service_pages = ['3d-architectural-visualization', 'interactive-vr-simulations', 'virtual-staging', 'decluttering', 'virtual-renovation', 'virtual-staging-decluttering', '360-virtual-staging'];
+                                                                                                            if (in_array(trim($page), $service_pages)) {
+                                                                                                                echo 'active';
+                                                                                                            }
+                                                                                                            ?>" href="#mobileServicesCollapse" data-bs-toggle="collapse" role="button" aria-expanded="<?php echo in_array(trim($page), $service_pages) ? 'true' : 'false'; ?>" aria-controls="mobileServicesCollapse">
+                    <span>Services</span>
+                    <span class="menu-arrow">▼</span>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Service 1</a></li>
-                    <li><a class="dropdown-item" href="#">Service 2</a></li>
-                    <li><a class="dropdown-item" href="#">Service 3</a></li>
-                    <li><a class="dropdown-item" href="#">Service 4</a></li>
-                </ul>
+
+                <div class="collapse <?php if (in_array(trim($page), $service_pages)) {
+                                            echo 'show';
+                                        } ?>" id="mobileServicesCollapse">
+                    <ul class="navbar-nav mobile-submenu-wrapper list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (trim($page) == '3d-architectural-visualization') {
+                                                    echo 'active';
+                                                } ?>" href="3d-architectural-visualization">3D Architectural Visualization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (trim($page) == 'interactive-vr-simulations') {
+                                                    echo 'active';
+                                                } ?>" href="interactive-vr-simulations">Interactive VR Simulations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (trim($page) == 'virtual-staging') {
+                                                    echo 'active';
+                                                } ?>" href="virtual-staging">Virtual Staging</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (trim($page) == 'decluttering') {
+                                                    echo 'active';
+                                                } ?>" href="decluttering">Decluttering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (trim($page) == 'virtual-renovation') {
+                                                    echo 'active';
+                                                } ?>" href="virtual-renovation">Virtual Renovation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (trim($page) == 'virtual-staging-decluttering') {
+                                                    echo 'active';
+                                                } ?>" href="virtual-staging-decluttering">Virtual Staging & Decluttering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php if (trim($page) == '360-virtual-staging') {
+                                                    echo 'active';
+                                                } ?>" href="360-virtual-staging">360° Virtual Staging</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link <?php if ($page == 'pricing') {
+                                        echo 'active';
+                                    } ?>" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    Pricing
-                </a>
+                <a class="nav-link <?php if ($page == 'portfolio') {
+                                        echo 'active';
+                                    } ?>" href="portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    Blog
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    Contact Us
-                </a>
+                <a class="nav-link <?php if ($page == 'contact-us') {
+                                        echo 'active';
+                                    } ?>" href="contact-us">Contact Us</a>
             </li>
         </ul>
-        <div class="mt-3">
-            <a href="#" class="btn btn-theme-outline">Live Chat</a> <br><br>
-            <a href="#" class="btn btn-theme">Join For Free</a>
+
+        <div class="mt-auto pt-4 border-top border-light border-opacity-10">
+            <a href="#" class="btn btn-theme-outline w-100 mb-3 py-2 text-center text-uppercase tracking-wider fw-semibold" style="font-size: 0.85rem;">Live Chat</a>
+            <a href="#" class="btn btn-theme w-100 py-2 text-center text-uppercase tracking-wider fw-semibold" style="font-size: 0.85rem;">Join For Free</a>
         </div>
     </div>
 </div>

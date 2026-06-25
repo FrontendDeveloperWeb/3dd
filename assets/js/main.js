@@ -267,23 +267,80 @@ document.addEventListener('DOMContentLoaded', () => {
 // =======================================footer form=============================================
 
 document.addEventListener('DOMContentLoaded', () => {
-    const newsletterForm = document.querySelector('.footer-newsletter-form');
-    
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', (e) => {
-            const inputField = newsletterForm.querySelector('.newsletter-input');
-            
-            // Allow all domain extensions cleanly
-            if (!newsletterForm.checkValidity() || !inputField.value.trim()) {
-                e.preventDefault();
-                e.stopPropagation();
-                inputField.classList.add('is-invalid');
-            } else {
-                e.preventDefault();
-                inputField.classList.remove('is-invalid');
-                alert('Subscribed successfully!');
-                newsletterForm.reset();
-            }
-        });
-    }
+  const newsletterForm = document.querySelector('.footer-newsletter-form');
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+      const inputField = newsletterForm.querySelector('.newsletter-input');
+
+      // Allow all domain extensions cleanly
+      if (!newsletterForm.checkValidity() || !inputField.value.trim()) {
+        e.preventDefault();
+        e.stopPropagation();
+        inputField.classList.add('is-invalid');
+      } else {
+        e.preventDefault();
+        inputField.classList.remove('is-invalid');
+        alert('Subscribed successfully!');
+        newsletterForm.reset();
+      }
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('consultationForm');
+  const modalElement = document.getElementById('consultationModal');
+
+  if (form) {
+    form.addEventListener('submit', function (event) {
+      // Regex validation checks
+      const emailInput = document.getElementById('validationEmail');
+      const phoneInput = document.getElementById('validationPhone');
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      // Matches international or standard formats safely
+      const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+
+      let customValid = true;
+
+      // Validate Email format explicitly
+      if (!emailRegex.test(emailInput.value)) {
+        emailInput.setCustomValidity('Invalid email structure');
+        customValid = false;
+      } else {
+        emailInput.setCustomValidity('');
+      }
+
+      // Validate Phone if user fills it out (Optional field)
+      if (phoneInput.value.trim() !== "" && !phoneRegex.test(phoneInput.value)) {
+        phoneInput.setCustomValidity('Invalid phone structure');
+        customValid = false;
+      } else {
+        phoneInput.setCustomValidity('');
+      }
+
+      // Standard HTML5 validation check
+      if (!form.checkValidity() || !customValid) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        // Success Scenario
+        event.preventDefault(); // Stop page reload for demo integration
+
+        alert('Success! Your consultation request has been validated and sent.');
+
+        // Reset and close modal cleanly via Bootstrap programmatic calls
+        form.reset();
+        form.classList.remove('was-validated');
+
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        if (modalInstance) {
+          modalInstance.hide();
+        }
+      }
+
+      form.classList.add('was-validated');
+    }, false);
+  }
 });
