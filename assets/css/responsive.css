@@ -1,20 +1,310 @@
-/* For Google Chrome (125% zoom level) */
+
 @media screen and (-webkit-min-device-pixel-ratio: 1.25),
   screen and (min-resolution: 120dpi) {
 }
 
-@media (min-width: 1280px) and (max-width: 1366px) {
 
+html, body {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important; 
+  scroll-behavior: smooth;
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
 
+.container, .container-fluid, .row {
+  max-width: 100vw !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  overflow: hidden !important;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
 
+@media (max-width: 1199.98px) {
+  :root {
+    --main-heading-size: 42px !important; 
+  }
+
+  .main-heading {
+    font-size: 2.5rem !important;
+  }
+  
+  .premium-services-dropdown .mega-dropdown-panel {
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 10px 0 0 15px !important;
+    display: none !important;
+  }
+  
+  .premium-services-dropdown:hover .mega-dropdown-panel {
+    display: block !important;
+  }
+
+  .premium-services-dropdown .mega-dropdown-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
 
+@media (max-width: 991.98px) {
+  :root {
+    --main-heading-size: 36px !important;
+  }
+
+  .main-heading {
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .section-title {
+    font-size: 1.85rem !important;
+    line-height: 1.3 !important;
+  }
+
+  section {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+
+  .navbar-nav {
+    gap: 12px !important;
+    padding: 15px 0 !important;
+  }
+
+  .client {
+    margin-top: 0 !important; 
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .footer-links > p {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .hero-section {
+    padding-top: 130px !important;
+    padding-bottom: 70px !important;
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --main-heading-size: 28px !important;
+  }
+
+  .main-heading {
+    font-size: 1.85rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .section-title {
+    font-size: 1.6rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .image-card {
+    border-radius: 20px !important; 
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  .comparison-slider-container {
+    aspect-ratio: 4 / 3 !important;
+    width: 100% !important;
+  }
+
+  .image-label {
+    bottom: 15px !important;
+    font-size: 9px !important;
+    padding: 4px 8px !important;
+  }
+
+  .label-before { left: 15px !important; }
+  .label-after { right: 15px !important; }
+
+  .frame-corner {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .frame-corner.top-left { top: 20px !important; left: 20px !important; }
+  .frame-corner.top-right { top: 20px !important; right: 20px !important; }
+  .frame-corner.bottom-left { bottom: 20px !important; left: 20px !important; }
+  .frame-corner.bottom-right { bottom: 20px !important; right: 20px !important; }
+}
+
+
+@media (max-width: 576px) {
+  :root {
+    --main-heading-size: 24px !important;
+  }
+
+
+  .header {
+    position: static !important;
+    background: #000001 !important;
+    padding: 10px 0 !important;
+  }
+
+  header.sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+  .hero-title-wrapper {
+    min-height: auto !important;
+    margin-bottom: 25px !important;
+    display: block !important;
+  }
+
+  .hero-title {
+    position: static !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .smooth-line {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important; 
+    font-size: 1.65rem !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    display: inline !important;
+  }
+  
+  .line-mask {
+    display: inline !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  /* 2. Fluid Hierarchy Mapping for font-sizes */
+  h1, .h1-mock { font-size: 1.8rem !important; line-height: 1.2 !important; }
+  h2, .h2-mock { font-size: 1.55rem !important; line-height: 1.25 !important; }
+  h3, .h3-mock { font-size: 1.35rem !important; line-height: 1.3 !important; }
+  h4, .h4-mock { font-size: 1.15rem !important; }
+  h5, .h5-mock { font-size: 1rem !important; }
+  h6, .h6-mock { font-size: 0.9rem !important; }
+  
+  .hero-desc, .section-desc {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    padding: 0 10px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .hero-badge, .section-badge {
+    margin-bottom: 15px !important;
+    padding: 4px 12px !important;
+    font-size: 10px !important;
+  }
+
+  /* 3. Margins, Paddings, and Adaptive Spaces */
+  section {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+
+  .form-control {
+    padding: 12px 14px !important;
+    font-size: 14px !important;
+  }
+
+  .btn-theme, .cta-button {
+    padding: 0.7rem 1.25rem !important;
+    font-size: 0.8rem !important;
+    width: 100% !important; 
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .scroll-explore {
+    bottom: 15px !important;
+    gap: 4px !important;
+  }
+
+
+  .footer {
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  .footer-links > ul {
+    padding-left: 0 !important;
+    list-style-position: inside !important;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .footer-links > h6 {
+    margin-top: 15px !important;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social > p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .social > p > span {
+    margin-right: 0 !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .social > p > a {
+    margin: 0 !important;
+    padding: 8px 14px !important;
+  }
+
+
+  img, svg, video, canvas {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .row > * {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .smooth-line {
+    font-size: 1.45rem !important;
+  }
+  
+  .main-heading {
+    font-size: 1.6rem !important;
+  }
+
+  .section-title {
+    font-size: 1.4rem !important;
+  }
+
+  h1 { font-size: 1.55rem !important; }
+  h2 { font-size: 1.35rem !important; }
 }
